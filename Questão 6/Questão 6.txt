@@ -1,0 +1,4 @@
+*(pulo + 2) o valor do terceiro elemento esta nessa expressão;
+*(pulo + 4);
+pulo + 4;
+pulo + 2;

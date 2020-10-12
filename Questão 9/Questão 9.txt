@@ -1,0 +1,21 @@
+
+	obs: x[4] o endereço de x[0] 4092 
+	char 1 byte 
+	int 2 byte 
+	float 4 byte
+	double 8 byte
+
+
+	e x+1, x+2 e x+3??;
+
+◦ x for declarado como char?
+	x + 1 == 4093 ; x + 2 == 4094 ; x + 3 == 4095 ; 
+
+x for declarado como int?
+	x + 1 == 4094 ; x + 2 == 4096 ; x + 3 == 4098 ; 
+
+x for declarado como float?
+	x + 1 == 4096 ; x + 2 == 4100 ; x + 3 == 4104 ; 
+
+x  for declarado como double?
+	x + 1 == 4100 ; x + 2 == 4108 ; x + 3 == 4116 ; 

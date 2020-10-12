@@ -1,0 +1,11 @@
+	float aloha[10], coisas[10][5], *pf, value = 2.2;
+	int i=3;
+
+	aloha[2] = value;   // valido, já que estou passando um valor float para um vetor float
+	scanf("%f", &aloha); // ou me ver é invalido, porem o copilador não indentificou
+	aloha = value"; // invalidor pos Valor" esta incorreto
+	printf("%f", aloha); // não esta errado, no entanto não é assim que imprimi um vetor
+	coisas[4][4] = aloha[3]; // valido
+	coisas[5] = aloha; // invalido, pois aloha e um vetor 
+	pf = value;// invalido, pois não esta passando o indereço de value é sim o valor dele
+	pf = aloha; // valido 

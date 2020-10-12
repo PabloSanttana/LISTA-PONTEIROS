@@ -1,0 +1,15 @@
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%d ",*(vet+i));
+  }
+}
+esse programa acima impremir os valores do vetor
+
+
+for(i=0;i<3;i++){
+  printf("%X ",vet+i);
+  }
+
+esse de codigo imprimir os endereços 

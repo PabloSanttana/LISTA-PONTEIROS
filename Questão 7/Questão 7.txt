@@ -1,0 +1,4 @@
+p = mat + 1; valida
+p = mat++; não valida
+p = ++mat; não valida
+x = (*mat)++; valida

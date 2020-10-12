@@ -1,0 +1,23 @@
+O uso de ponteiros para funções em C serve principalmente para definir, em tempo de execução, qual função será executada, sem a necessidade de escrever o nome da função, de forma explícita naquele ponto do código.
+
+/*
+     *  compara dois inteiros, retornando:
+     *    0 se os dois elementos forem iguais
+     *     um inteiro negativo se o primeiro elemento for menor
+     *     um inteiro positivo se o primeiro elemento for maior
+     */
+     int comp_int(int *e1, int *e2) {
+        return(*e1 - *e2);
+     
+}
+  main() {
+        /* prototipo de comp_int: */
+        int comp_int(int *, int *);
+        /* ponteiro para uma funcao retornando inteiro */
+        int (*apcmp)();
+        int a, b;
+
+        apcmp = comp_int;       /* inicializa ponteiro */
+        ...
+        (*apcmp)(a, b);         /* invoca funcao */
+    }

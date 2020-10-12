@@ -1,0 +1,18 @@
+p = i ilegal, pq p e um ponteiro;
+
+q = &j legal;
+
+p = &*&i; // *&i valor que esta no i;  &*&i endereço do lavor que esta em i;
+
+i = (*&)j  ilegal;
+
+i = *&j  legal;
+
+i = *&*&j; legal  esta pegando valor do J
+
+q = *p; ilegal pois q e um ponteiro e *q e valor;
+
+
+
+i = (*p)++ + *q; legal  (valor)++ + valor;
+
